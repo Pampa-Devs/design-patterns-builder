@@ -52,7 +52,7 @@ public class House {
         this.rooms = rooms;
     }
 
-    public boolean isHasGarage() {
+    public boolean hasGarage() {
         return hasGarage;
     }
 
@@ -60,7 +60,7 @@ public class House {
         this.hasGarage = hasGarage;
     }
 
-    public boolean isHasSwimPool() {
+    public boolean hasSwimPool() {
         return hasSwimPool;
     }
 
@@ -68,7 +68,7 @@ public class House {
         this.hasSwimPool = hasSwimPool;
     }
 
-    public boolean isHasGarden() {
+    public boolean hasGarden() {
         return hasGarden;
     }
 
@@ -76,7 +76,7 @@ public class House {
         this.hasGarden = hasGarden;
     }
 
-    public boolean isHasFirePlace() {
+    public boolean hasFirePlace() {
         return hasFirePlace;
     }
 
@@ -84,7 +84,7 @@ public class House {
         this.hasFirePlace = hasFirePlace;
     }
 
-    public boolean isHasGrillPlace() {
+    public boolean hasGrillPlace() {
         return hasGrillPlace;
     }
 
@@ -92,7 +92,7 @@ public class House {
         this.hasGrillPlace = hasGrillPlace;
     }
 
-    public boolean isHasOpenConcept() {
+    public boolean hasOpenConcept() {
         return hasOpenConcept;
     }
 
@@ -100,7 +100,7 @@ public class House {
         this.hasOpenConcept = hasOpenConcept;
     }
 
-    public boolean isHasPlayKids() {
+    public boolean hasPlayKids() {
         return hasPlayKids;
     }
 
@@ -114,13 +114,13 @@ public class House {
         car += "windows: " + getWindows() + "\n";
         car += "doors: " + getDoors() + "\n";
         car += "rooms: " + getRooms() + "\n";
-        car += "hasGarage: " + isHasGarage() + "\n";
-        car += "hasSwimPool - " + isHasSwimPool() + "\n";
-        car += "hasGarden - " + isHasGarden() + "\n";
-        car += "hasFirePlace - " + isHasFirePlace() + "\n";
-        car += "hasGrillPlace - " + isHasGrillPlace() + "\n";
-        car += "hasOpenConcept: " + isHasOpenConcept() + "\n";
-        car += "hasPlayKids: " + isHasPlayKids() + "\n";
+        car += "hasGarage: " + hasGarage() + "\n";
+        car += "hasSwimPool - " + hasSwimPool() + "\n";
+        car += "hasGarden - " + hasGarden() + "\n";
+        car += "hasFirePlace - " + hasFirePlace() + "\n";
+        car += "hasGrillPlace - " + hasGrillPlace() + "\n";
+        car += "hasOpenConcept: " + hasOpenConcept() + "\n";
+        car += "hasPlayKids: " + hasPlayKids() + "\n";
         return car;
     }
 }
