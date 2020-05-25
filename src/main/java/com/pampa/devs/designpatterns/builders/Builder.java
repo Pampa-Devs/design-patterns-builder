@@ -1,12 +1,6 @@
-package com.pampa.devs.designpatterns.builder.builders;
+package com.pampa.devs.designpatterns.builders;
 
-/**
- * Builder interface defines all possible ways to configure a house.
- */
 public interface Builder {
-    void withWindows(int windows);
-    void withDoors(int doors);
-    void withRooms(int rooms);
     void withGarage(boolean garage);
     void withSwimPool(boolean swimPool);
     void withGarden(boolean garden);
@@ -14,4 +8,7 @@ public interface Builder {
     void withGrillPlace(boolean grillPlace);
     void withOpenConcept(boolean openConcept);
     void withPlayKids(boolean playKids);
+    void withWindows(int windows);
+    void withDoors(int doors);
+    void withRooms(int rooms);
 }

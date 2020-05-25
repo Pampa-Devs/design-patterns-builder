@@ -1,25 +1,20 @@
 package com.pampa.devs.designpatterns;
 
-import com.pampa.devs.designpatterns.builder.book.House;
-import com.pampa.devs.designpatterns.builder.builders.HouseBuilder;
-import com.pampa.devs.designpatterns.builder.builders.HouseDirector;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.pampa.devs.designpatterns.builders.HouseBuilder;
+import com.pampa.devs.designpatterns.builders.HouseDirector;
+import com.pampa.devs.designpatterns.house.House;
 
-@SpringBootApplication
 public class DesignPatternsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DesignPatternsApplication.class, args);
+  public static void main(String[] args) {
+    House house = new House(false, false, false, true, false, false, false, 0, 0, 0);
+    System.out.println(house.toString());
 
-		HouseDirector houseDirector = new HouseDirector();
-		HouseBuilder houseBuilder = new HouseBuilder();
+	  HouseDirector houseDirector = new HouseDirector();
+	  HouseBuilder houseBuilder = new HouseBuilder();
+	  houseDirector.withFirePlace(houseBuilder);
 
-		houseDirector.withGarage(houseBuilder);
-		houseDirector.withGarden(houseBuilder);
-		houseDirector.withOpenConcept(houseBuilder);
-
-		House house = houseBuilder.build();
-		System.out.println(house.toString());
-	}
+	  House houseCreated = houseBuilder.build();
+	  System.out.println(houseCreated.toString());
+  }
 }

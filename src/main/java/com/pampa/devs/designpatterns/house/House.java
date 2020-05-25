@@ -1,10 +1,7 @@
-package com.pampa.devs.designpatterns.builder.book;
+package com.pampa.devs.designpatterns.house;
 
 public class House {
 
-    private int windows;
-    private int doors;
-    private int rooms;
     private boolean hasGarage;
     private boolean hasSwimPool;
     private boolean hasGarden;
@@ -12,13 +9,13 @@ public class House {
     private boolean hasGrillPlace;
     private boolean hasOpenConcept;
     private boolean hasPlayKids;
+    private int windows;
+    private int doors;
+    private int rooms;
 
-    public House(int windows, int doors, int rooms, boolean hasGarage, boolean hasSwimPool,
+    public House(boolean hasGarage, boolean hasSwimPool,
                  boolean hasGarden, boolean hasFirePlace, boolean hasGrillPlace,
-                 boolean hasOpenConcept, boolean hasPlayKids) {
-        this.windows = windows;
-        this.doors = doors;
-        this.rooms = rooms;
+                 boolean hasOpenConcept, boolean hasPlayKids, int windows, int doors, int rooms) {
         this.hasGarage = hasGarage;
         this.hasSwimPool = hasSwimPool;
         this.hasGarden = hasGarden;
@@ -26,6 +23,9 @@ public class House {
         this.hasGrillPlace = hasGrillPlace;
         this.hasOpenConcept = hasOpenConcept;
         this.hasPlayKids = hasPlayKids;
+        this.windows = windows;
+        this.doors = doors;
+        this.rooms = rooms;
     }
 
     public int getWindows() {
